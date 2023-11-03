@@ -58,7 +58,7 @@ const songs = [
     {
         path: 'assets/7.mp3',
         displayName: 'Barney Miller',
-        cover: 'assets/7.jpg',
+        cover: 'assets/7.jfif',
         artist: 'Jack Elliott and Allyn Ferguson',
     },
 ];
