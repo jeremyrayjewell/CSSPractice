@@ -34,7 +34,7 @@ var constants = {
 };
 
 function preload(){
-  bg = loadImage('https://content.codecademy.com/programs/code-foundations-path/bop-i/strings/Party.png');
+  bg = loadImage('Party.png');
 
 }
 
