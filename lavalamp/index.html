@@ -7,7 +7,64 @@
     <title>Lava Lamp</title>
 </head>
 <body>
-    
+    <div class="scene">
+        <div class="lava-lamp" style="--height: 400; --width: 150">
+            <div class="lava-lamp_main">
+                <div class="lava-lamp_glass">
+                    <div class="lava-lamp_lava">
+                        <svg>
+                            <ellipse class="blob blob--top" cx="35" cy="0" rx="35" ry="10"></ellipse>
+                            <ellipse class="blob blob--bottom" cx="75" cy="270" rx="75" ry="10"></ellipse>
+                            <circle class="blob" r="23.5" cx="114" cy="400" style="--skewX: -1; --skewY: 0; --height: 47; --speed: 15; --delay: -1; --direction: alternate-reverse;"></circle>
+                            <circle class="blob" r="17.5" cx="120" cy="400" style="--skewX: 1; --skewY: 0; --height: 47; --speed: 15; --delay: -1; --direction: alternate-reverse;"></circle>
+                            <circle class="blob" r="23.5" cx="149" cy="400" style="--skewX: 2; --skewY: 1; --height: 47; --speed: 19; --delay: -4; --direction: alternate;"></circle>
+                            <circle class="blob" r="11.5" cx="126" cy="400" style="--skewX: -4; --skewY: 4; --height: 35; --speed: 20; --delay: -3; --direction: alternate;"></circle>
+                        </svg>
+                    </div>
+                    <div class="lava-lamp_lava">
+                        <svg>
+                            <ellipse class="blob blob--top" cx="35" cy="0" rx="35" ry="10"></ellipse>
+                            <ellipse class="blob blob--bottom" cx="75" cy="270" rx="75" ry="10"></ellipse>
+                            <circle class="blob" r="23.5" cx="46" cy="400" style="--skewX: -4; --skewY: 5; --height: 43; --speed: 20; --delay: -4; --direction: alternate;"></circle>
+                            <circle class="blob" r="40" cx="59" cy="400" style="--skewX: -5; --skewY: 0; --height: 80; --speed: 18; --delay: -4; --direction: alternate;"></circle>
+                            <circle class="blob" r="33.5" cx="67" cy="400" style="--skewX: 2; --skewY: 3; --height: 67; --speed: 17; --delay: -2; --direction: alternate;"></circle>
+                            <circle class="blob" r="18" cx="3" cy="400" style="--skewX: 0; --skewY: 0; --height: 36; --speed: 21; --delay: -5; --direction: alternate;"></circle>
+                        </svg>
+                    </div>
+                    <div class="lava-lamp_lava">
+                        <svg>
+                            <ellipse class="blob blob--top" cx="35" cy="0" rx="35" ry="10"></ellipse>
+                            <ellipse class="blob blob--bottom" cx="75" cy="270" rx="75" ry="10"></ellipse>
+                            <circle class="blob" r="41.5" cx="47" cy="400" style="--skewX: 4; --skewY: 1; --height: 83; --speed: 49; --delay: -1; --direction: alternate-reverse;"></circle>
+                            <circle class="blob" r="36" cx="59" cy="400" style="--skewX: 3; --skewY: -5; --height: 72; --speed: 20; --delay: -6; --direction: alternate;"></circle>
+                        </svg>
+                    </div>
+                    <div class="lava-lamp_lava">
+                        <svg>
+                            <ellipse class="blob blob--top" cx="35" cy="0" rx="35" ry="10"></ellipse>
+                            <ellipse class="blob blob--bottom" cx="75" cy="270" rx="75" ry="10"></ellipse>
+                            <circle class="blob" r="40" cx="140" cy="400" style="--skewX: -4; --skewY: 0; --height: 80; --speed: 44; --delay: -1; --direction: alternate;"></circle>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="lava-lamp_base"></div>
+        </div>
+        <svg style="position: absolute; left: 100%">
+            <defs>
+                <filter id="goo">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                    <feColorMatrix in="blur" mode="matrix" values="
+                        1 0 0 0 0
+                        0 1 0 0 0
+                        0 0 1 0 0
+                        0 0 0 18 -7" result="goo" />
+                    <feBlend in="SourceGraphic" in2="goo" />
+                </filter>
+            </defs>   
+
+        </svg>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
